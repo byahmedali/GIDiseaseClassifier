@@ -41,7 +41,6 @@ def load_classification_model():
         if not os.path.exists(MODEL_PATH):
             # Construct gdown URL and download
             download_url = f"https://drive.google.com/uc?id={MODEL_FILE_ID}"
-            st.info("Downloading model file...")
             gdown.download(download_url, MODEL_PATH, quiet=False)
 
         model = load_model(MODEL_PATH)
@@ -60,13 +59,9 @@ uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png
 
 # Image preprocessing function to prepare for model input
 def preprocess_image(img):
-    # Resize to model's expected input dimensions
     img = img.resize((299, 299))
-    # Convert to NumPy array
-    img_array = image.img_to_array(img)  # shape: (299, 299, 3), dtype: float32 in [0, 255]
-    # Add batch dimension
-    img_array = np.expand_dims(img_array, axis=0)  # shape: (1, 299, 299, 3)
-    # Convert to TensorFlow tensor
+    img_array = image.img_to_array(img)
+    img_array = np.expand_dims(img_array, axis=0)
     img_tensor = tf.convert_to_tensor(img_array)
     return img_tensor
 

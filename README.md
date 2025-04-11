@@ -2,7 +2,7 @@
 
 A deep learning-based web application for classifying endoscopic images of the gastrointestinal tract into three conditions: Esophagitis, Polyps, and Ulcerative Colitis.
 
-![GI Diseases Classifier](https://via.placeholder.com/800x400?text=GI+Diseases+Classifier)
+![GI Diseases Classifier](https://gidiseaseclassifier.streamlit.app/)
 
 ## Overview
 
