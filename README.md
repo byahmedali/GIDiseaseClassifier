@@ -2,7 +2,7 @@
 
 A deep learning-based web application for classifying endoscopic images of the gastrointestinal tract into three conditions: Esophagitis, Polyps, and Ulcerative Colitis.
 
-![GI Diseases Classifier](https://gidiseaseclassifier.streamlit.app/)
+[GI Diseases Classifier](https://gidiseaseclassifier.streamlit.app/)
 
 ## Overview
 
@@ -78,3 +78,9 @@ gi-diseases-classifier/
 ├── requirements.txt        # Python dependencies
 └── README.md              # Project documentation
 ```
+
+## Acknowledgements
+
+We have acquired the test images from the [Kvasir dataset](https://datasets.simula.no/kvasir/). The dataset is described in:
+
+Pogorelov, K., Randel, K. R., Griwodz, C., Eskeland, S. L., de Lange, T., Johansen, D., ... & Halvorsen, P. (2017). KVASIR: A Multi-Class Image Dataset for Computer Aided Gastrointestinal Disease Detection. In *Proceedings of the 8th ACM on Multimedia Systems Conference (MMSys'17)* (pp. 164-169). ACM. https://doi.org/10.1145/3083187.3083212
